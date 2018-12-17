@@ -1,0 +1,52 @@
+<html>
+<!-- Karmesh Patel -->
+<head>
+	<title> Login </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function sendFunction(){
+			var phpfront= "phpfront.php";
+			var req= new XMLHttpRequest();
+			var ucid= document.getElementById("ucid").value;
+			var pass= document.getElementById("pass").value;
+			var str= "ucid="+ucid+"&pass="+pass;
+			req.open("POST",phpfront,true);
+			req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			req.onreadystatechange= function(){
+				if (req.readyState==4 && req.status==200){
+					var rdata= req.responseText;
+					if(rdata == "truep"){
+						location.href="https://web.njit.edu/~ksp52/cs490/teacher/teacherPage1.php";
+					}
+					else if(rdata == "trues"){
+						location.href="https://web.njit.edu/~ksp52/cs490/student/studentPage1.php";
+					}
+					else{
+						document.getElementById("status").innerHTML= rdata;
+					}
+						
+					
+				}
+			}
+			req.send(str);
+			
+		}
+	</script>
+</head>
+<body>
+	<div class="loginbox" onsubmit="return false">
+	<img src="loginavatar.jpg" class="avatar"/>
+	<h1> Login </h1>
+	<form>
+		<p> UCID </p>
+		<input type="text" id="ucid" name="" placeholder= "Enter UCID" required>
+		<p> Password </p>
+		<input type="password" id="pass" name="" placeholder= "Enter Password" required>
+		<button type="submit" onclick="sendFunction();">Submit</button>
+	</form>
+	<br>
+	<div id="status"><b> </div>
+	
+
+</body>
+</html>

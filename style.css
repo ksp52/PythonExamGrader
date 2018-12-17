@@ -1,0 +1,196 @@
+/* Karmesh Patel */
+body, html{
+	background-color:#151719;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	height: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 15px;
+	margin-right: 0;
+    padding: 0;
+	color: white;
+	
+}
+.loginbox{
+	width: 350px;
+	height: 350px;
+	background: white;
+	color: black;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+h1{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 25px;
+}
+.loginbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.loginbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+button{
+    border: none;
+	outline: none;
+	height: 40px;
+	background: blue;
+	color: white;
+	font-size: 18px;
+	border-radius: 20px;
+	width: 75%;
+}
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.echostuff{
+	font-size: 20px;
+	font-weight: bold;
+}
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc;  }
+
+#sidebar{
+	position: fixed;
+	width:200px;
+	height:100%;
+	background:#151719;
+	left: -200px;
+	transition: all 500ms linear;
+}
+#sidebar.active{
+	left: 0px;
+}
+#sidebar ul li {
+	color:rgba(230,230,230,0.9);
+	list-style:none;
+	padding:15px 10px;
+	border-bottom: 1px solid rdba(100,100,100,0.3);
+}
+#sidebar .toggle-btn{
+	position: absolute;
+	left:230px;
+	top:20px;
+}
+#sidebar .toggle-btn span{
+	display:block;
+	width:30px;
+	height:5px;
+	background:white;
+	margin: 5px 0px;
+}
+a { color:white }
+a:visited{
+	text-decoration: none; color:white;
+}
+.section1{
+	width:50%;
+	float:left;
+	height:100vh;
+	margin:0;
+    padding:0;	
+}
+.section2{
+	width:50%;
+	float:left;
+	height:100vh;
+	margin:0;
+	padding-right:0;
+	padding-left:0;
+	padding-bottom:0;
+	padding-top:0;
+	word-wrap: break-word;
+	display: inline-block;
+	
+	
+}
+table {
+    border: 1px solid lightgray;
+
+}
+table tr {
+    text-align: center;
+    padding: 10px;
+}
+table td {
+    width: 300px;
+    border: 1px dotted silver;
+    word-break: break-all;
+}
+table td.expand{
+	width:65%;
+	word-wrap: break-word;
+	text-align: left;
+	
+}
+table td.shrink{
+	white-space:nowrap;
+}
+#output{
+	margin-right:10px;
+	word-wrap: break-word;
+	
+}
+.grade1{
+  
+}
+.boxxed{
+	border: 3px solid green;
+	height: 150px;
+    width: 55%;
+	background: white;
+	color: green;
+	font-weight: bold;
+	padding: 30px;
+}
+.boxxed1{
+	border: 3px solid red;
+	height: 150px;
+    width: 55%;
+	background: white;
+	padding: 30px;
+	color: red;
+	font-weight: bold;
+}
+input[type=button].abutton{
+	background: green;
+	color: white;
+}
+input[type=button].dbutton{
+	background: red;
+	color: white;
+}
+.tcomment{
+	height: 100px;
+	width: 45%;
+	background: white;
+	font-weight: bold;
+}
